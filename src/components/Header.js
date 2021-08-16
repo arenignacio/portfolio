@@ -6,13 +6,15 @@ const Container = Style.div`
    display: flex;
    border: 1px solid black;
    height: 30px;
+   width: 100vw;
+   position: fixed;
 `;
 
 const Header = () => {
 	return (
 		<Container>
 			<Button
-				style={{ backgroundColor: 'papaya' }}
+				style={{ backgroundColor: 'royalblue' }}
 				content="Like"
 				icon="like"
 			/>
