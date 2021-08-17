@@ -5,18 +5,20 @@ const Container = Style.div`
    display: flex;
    justify-content: space-between;
    align-items: center;
-   background: gray;
+   background: hsla(200, 0%, 45%, 1);
    height: 30px;
    width: 100vw;
    position: fixed;
    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	z-index: 2;
 `;
 
 const Menu = Style.div`
    display: flex;
    align-items: center;
    justify-content: center;
-   font-size: 12px;
+   font-size: 0.8rem;
+	letter-spacing: 0.8px;
    font-family: Roboto, sans-serif;
    color: white;
    height: 30px;
@@ -39,6 +41,7 @@ const Menu = Style.div`
       div {
            vertical-align: middle;
            text-align: center;
+			  user-select: none;
        }
    }
 `;
@@ -47,13 +50,13 @@ const Logo = Style.div`
    display: flex;
 	justify-content: space-between;
 	align-items: center;
-	font-family: Monoton, sans-serif;
+	font-family: "Zen Tokyo Zoo", sans-serif;
 	color: white;
 	border: white 1px solid;
 	padding: 2px;
 
    &:hover {
-   background: black;
+   background: hsla(360, 50%, 50%, 0.8);
    }
 `;
 
