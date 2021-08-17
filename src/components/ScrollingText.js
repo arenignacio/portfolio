@@ -13,7 +13,6 @@ const Text = Style.div`
 						? `animation: animate infinite 
 					${animationLength}s;`
 						: ''}
-            padding-left: 10px;
         }
   
         @keyframes animate {
@@ -29,7 +28,7 @@ const ScrollingText = ({ textArr, size, length = 0 }) => {
 	textArr.forEach(
 		(text, idx) =>
 			(keyFramesText += ` ${
-				(idx / textArr.length) * 100
+				(idx / textArr.length) * 100 + 1
 			}% {content: "${text}"}`)
 	);
 
