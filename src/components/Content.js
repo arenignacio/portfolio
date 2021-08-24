@@ -5,15 +5,27 @@ const Container = style.div`
    flex-direction: column;
    width: 100%;
    padding: 25px;
-   
-   color: rgba(255, 255, 255, 0.7);
+   color: rgba(255, 255, 255, 0.9);
+   letter-spacing: 0.7px;
+   border-top: 1px solid rgba(0, 0, 0, 0.16);
+   font-family: Roboto, serif;
 
-   h1 {
+   h3 {
       border-bottom: 1px solid rgba(0, 0, 0, 0.16);
       padding-bottom: 20px;
     
-      font-family: Poppins, sans-serif;
+      font-family: Roboto, sans-serif;
    }
+
+   li {
+      list-style: none;
+      margin-bottom: 15px;
+
+      &::before {
+         content: 'x ';
+      }
+   }
+
 
 
    ${({ background }) => {
@@ -24,7 +36,7 @@ const Container = style.div`
 const Content = ({ title, background, content }) => {
 	return (
 		<Container background={background}>
-			<h1>{title}</h1>
+			<h3>{title}</h3>
 			{content}
 		</Container>
 	);
