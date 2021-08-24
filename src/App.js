@@ -8,13 +8,14 @@ import Button from './components/Button';
 
 //assets
 import facebook from './img/facebook.svg';
+import arrowForward from './img/arrow-forward-outline.svg';
 
 const OuterContainer = style.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	background: rgba(140, 213, 103, 0.6);
+	background-image: linear-gradient(to top right, rgb(101, 115, 255), rgb(109, 120, 241), rgb(117, 125, 227), rgb(125, 131, 212), rgb(133, 136, 198), rgb(141, 141, 184), rgb(123, 154, 188), rgb(106, 166, 192), rgb(88, 179, 196), rgb(70, 191, 199), rgb(53, 204, 203), rgb(35, 216, 207));
 	
 `;
 
@@ -24,10 +25,14 @@ const InnerContainer = style.div`
 	width: 92%;
 	max-width: 600px;
 	margin: 15px 0px;
+	padding: 0px;
 
-	border: 1px solid rgba(212, 212, 212, 0.5);
 	border-radius: 10px 10px 0px 0px ;
 	background: white;
+
+	@media (min-width: 600px) {
+		margin: 70px;
+	}
 
 	
 `;
@@ -51,13 +56,15 @@ const App = () => {
 				<Content
 					title="Projects"
 					background="rgba(32, 154, 206, 0.8)"
+					listImage={arrowForward}
 					content={
 						<ul style={{ padding: '0px' }}>
 							<li>
 								Reverse Polish Calculator
 								<p>
-									Scientific Calculator that converts problems into
-									reverse polish notation before solving it
+									Scientific Calculator that use the shunting yard
+									algorithm to convert problems into reverse polish
+									notation before solving it
 								</p>
 							</li>
 							<li>Etch-a-sketch</li>
@@ -68,9 +75,7 @@ const App = () => {
 				<Content
 					title="Contact"
 					background="rgba(0, 110, 255, 1);"
-					content={
-						<Button name="Facebook " icon={facebook} href="test"></Button>
-					}
+					content={<Button name="Test " icon={facebook} href="#"></Button>}
 				></Content>
 			</InnerContainer>
 		</OuterContainer>

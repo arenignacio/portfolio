@@ -8,8 +8,23 @@ const Container = Style.header`
 	flex-direction: column;
    justify-content: center;
    align-items: center;
+	box-sizing: border-box;
 	width: 100%;
 	padding: 35px 10px;
+
+	@media (min-width: 600px) {
+		padding: 75px;
+	}
+
+	h1 {
+		color: rgba(144,147,150,0.72);
+		font-size: 2.5rem;
+	}
+
+	p {
+		color: rgba(144,147,150,0.50);
+		font-size: 1.3rem;
+	}
 `;
 
 const Profile = Style.div`

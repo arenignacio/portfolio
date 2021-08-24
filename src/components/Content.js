@@ -5,10 +5,14 @@ const Container = style.div`
    flex-direction: column;
    width: 100%;
    padding: 25px;
-   color: rgba(255, 255, 255, 0.9);
-   letter-spacing: 0.7px;
+
+   box-sizing: border-box;
    border-top: 1px solid rgba(0, 0, 0, 0.16);
+   
    font-family: Roboto, serif;
+   letter-spacing: 0.7px;
+   color: rgba(255, 255, 255, 0.9);
+
 
    h3 {
       border-bottom: 1px solid rgba(0, 0, 0, 0.16);
@@ -21,8 +25,19 @@ const Container = style.div`
       list-style: none;
       margin-bottom: 15px;
 
-      &::before {
-         content: 'x ';
+   }
+
+   @media (min-width: 600px) {
+      flex-direction: row;
+      h3 {
+         border-right: 1px solid rgba(0, 0, 0, 0.16);
+         border-bottom: none;
+         padding-right: 20px;
+         min-width: 20%;
+      }
+
+      span {
+         padding-left: 20px;
       }
    }
 
@@ -33,11 +48,11 @@ const Container = style.div`
 	}}
 `;
 
-const Content = ({ title, background, content }) => {
+const Content = ({ title, background, content, listImage }) => {
 	return (
-		<Container background={background}>
+		<Container background={background} listImage={listImage || ''}>
 			<h3>{title}</h3>
-			{content}
+			<span>{content}</span>
 		</Container>
 	);
 };
