@@ -9,6 +9,7 @@ import Button from './components/Button';
 //assets
 import github from './img/logo-github.svg';
 import arrowForward from './img/arrow-forward-outline.svg';
+import linkedIn from './img/logo-linkedin.svg';
 
 const OuterContainer = style.div`
 	display: flex;
@@ -81,6 +82,11 @@ const App = () => {
 								name="Github "
 								icon={github}
 								href="https://github.com/arenignacio"
+							></Button>
+							<Button
+								name="LinkedIn "
+								icon={linkedIn}
+								href="https://www.linkedin.com/in/aren-ignacio-715407151/"
 							></Button>
 						</div>
 					}

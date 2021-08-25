@@ -4,10 +4,16 @@ const Container = style.a.attrs(({ href }) => ({ href }))`
    display: flex;
    justify-content: center;
    width: auto;
+   margin-right: 15px;
    padding: 10px 15px;
    border: 1px solid white;
    border-radius: 5px;
    color: white;
+   font-size: 0.7rem;
+
+   &:hover {
+      font-weight: 900;
+   }
 
    &:active, &:focus{
       color: white;
@@ -21,11 +27,17 @@ const Container = style.a.attrs(({ href }) => ({ href }))`
    span {
       margin-left: 5px;
       padding-left: 5px;
+
+  
    }
 
    object, img {
       width: 16px;
 
+   }
+
+   @media (min-width: 600px) {
+      font-size: 1rem;
    }
 
    
