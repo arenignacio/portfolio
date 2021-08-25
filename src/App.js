@@ -7,7 +7,7 @@ import Content from './components/Content';
 import Button from './components/Button';
 
 //assets
-import facebook from './img/facebook.svg';
+import github from './img/logo-github.svg';
 import arrowForward from './img/arrow-forward-outline.svg';
 
 const OuterContainer = style.div`
@@ -75,7 +75,15 @@ const App = () => {
 				<Content
 					title="Contact"
 					background="rgba(0, 110, 255, 1);"
-					content={<Button name="Test " icon={facebook} href="#"></Button>}
+					content={
+						<div style={{ display: 'flex', flexDirection: 'row' }}>
+							<Button
+								name="Github "
+								icon={github}
+								href="https://github.com/arenignacio"
+							></Button>
+						</div>
+					}
 				></Content>
 			</InnerContainer>
 		</OuterContainer>

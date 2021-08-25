@@ -9,11 +9,23 @@ const Container = style.a.attrs(({ href }) => ({ href }))`
    border-radius: 5px;
    color: white;
 
-   &:active, &:focus {
+   &:active, &:focus{
       color: white;
    }
+   
+   &:hover {
+      color: black;
+      opacity: 0.8;
+   }
+
    span {
       margin-left: 5px;
+      padding-left: 5px;
+   }
+
+   object, img {
+      width: 16px;
+
    }
 
    
@@ -24,7 +36,13 @@ const Container = style.a.attrs(({ href }) => ({ href }))`
 const Button = ({ href, name, icon }) => {
 	return (
 		<Container href={href}>
-			<img src={icon} alt={name} width="16px" />
+			{icon.includes('svg') ? (
+				<object id="logo" data={icon} type="image/svg+xml">
+					icon
+				</object>
+			) : (
+				<img src={icon} alt={name} />
+			)}
 			<span>{name}</span>
 		</Container>
 	);

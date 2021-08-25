@@ -17,12 +17,12 @@ const Container = Style.header`
 	}
 
 	h1 {
-		color: rgba(144,147,150,0.72);
+		color: rgba(144,147,150,0.9);
 		font-size: 2.5rem;
 	}
 
 	p {
-		color: rgba(144,147,150,0.50);
+		color: rgba(144,147,150,0.7);
 		font-size: 1.3rem;
 	}
 `;
