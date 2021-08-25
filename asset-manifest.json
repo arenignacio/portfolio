@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.cf56ffaf.chunk.css",
-    "main.js": "/portfolio/static/js/main.bd5ee5dd.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.bd5ee5dd.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.7e13ebfc.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.7e13ebfc.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.bcd5af5a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.bcd5af5a.js.map",
     "static/css/2.9cc03708.chunk.css": "/portfolio/static/css/2.9cc03708.chunk.css",
@@ -12,16 +12,17 @@
     "static/css/2.9cc03708.chunk.css.map": "/portfolio/static/css/2.9cc03708.chunk.css.map",
     "static/css/main.cf56ffaf.chunk.css.map": "/portfolio/static/css/main.cf56ffaf.chunk.css.map",
     "static/js/2.741cefe7.chunk.js.LICENSE.txt": "/portfolio/static/js/2.741cefe7.chunk.js.LICENSE.txt",
-    "static/media/arrow-forward-outline.ce694b68.svg": "/portfolio/static/media/arrow-forward-outline.ce694b68.svg",
+    "static/media/arrow-forward-outline.7f5e0cd2.svg": "/portfolio/static/media/arrow-forward-outline.7f5e0cd2.svg",
     "static/media/avatar2.5ba0dad4.jpg": "/portfolio/static/media/avatar2.5ba0dad4.jpg",
     "static/media/semantic.min.css": "/portfolio/static/media/outline-icons.ddae9b1b.woff",
-    "static/media/facebook.df14e025.svg": "/portfolio/static/media/facebook.df14e025.svg"
+    "static/media/logo-github.e1507c9a.svg": "/portfolio/static/media/logo-github.e1507c9a.svg",
+    "static/media/logo-linkedin.b88e46c8.svg": "/portfolio/static/media/logo-linkedin.b88e46c8.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.bcd5af5a.js",
     "static/css/2.9cc03708.chunk.css",
     "static/js/2.741cefe7.chunk.js",
     "static/css/main.cf56ffaf.chunk.css",
-    "static/js/main.bd5ee5dd.chunk.js"
+    "static/js/main.7e13ebfc.chunk.js"
   ]
 }
